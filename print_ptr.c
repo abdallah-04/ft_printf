@@ -1,40 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   print_hex.c                                        :+:      :+:    :+:   */
+/*   print_ptr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amufleh <amufleh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/31 12:15:36 by amufleh           #+#    #+#             */
-/*   Updated: 2025/08/31 18:10:00 by amufleh          ###   ########.fr       */
+/*   Created: 2025/08/31 16:47:18 by amufleh           #+#    #+#             */
+/*   Updated: 2025/08/31 18:11:41 by amufleh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	hex_conversion(unsigned long num, char *str)
+static int	ptr_len(unsigned long num)
 {
-	int	indx;
+	int	count;
 
-	indx = 0;
-	if (num >= 16)
+	count = 1;
+	while (num >= 16)
 	{
-		hex_conversion (num / 16, str);
+		num /= 16;
+		count++;
 	}
-	indx = num % 16;
-	write(1, &str[indx], 1);
+	return (count);
 }
 
-int	print_hex(unsigned long num, char format)
+int	print_ptr(unsigned long ptr)
 {
-	char	*hex_char;
-	int		count;
+	int	count;
 
-	count = hex_len(num);
-	if (format == 'X')
-		hex_char = ft_strdup("0123456789ABCDEF");
-	else
-		hex_char = ft_strdup("0123456789abcdef");
-	hex_conversion(num, hex_char);
-	return (count);
+	if (!ptr)
+		return (print_str ("(nil)"));
+	count = ptr_len (ptr);
+	write(1, "0x", 2);
+	print_hex(ptr, 'x');
+	return (count + 2);
 }

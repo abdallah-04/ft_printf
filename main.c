@@ -9,5 +9,21 @@ int main()
 	// int y = ft_printf("%i\n",1234);
 	// ft_printf("%d\n",x);
 	// printf("%i",y);
-	ft_printf("%x",15015);
+	// ft_printf("%X\n",-2147483647);
+	// printf("%X\n",-2147483647);
+	// int x = 8;
+	// int *y = &x;
+	// int result = printf("%p\n",y);
+	// int result1 = ft_printf("%p\n",y);
+	// printf("%d %d",result,result1);
+	// printf("%%\n");
+	// ft_printf("%%");
+	unsigned int a = -1;
+    	int b = -1;
+    	ft_printf("%x\n", a);
+    	ft_printf("%x\n", b);
+
+    	ft_printf("%d\n", a);
+    	ft_printf("%d\n", b);
 }
+

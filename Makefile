@@ -6,11 +6,11 @@
 #    By: amufleh <amufleh@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/31 10:55:52 by amufleh           #+#    #+#              #
-#    Updated: 2025/08/31 12:56:29 by amufleh          ###   ########.fr        #
+#    Updated: 2025/08/31 18:02:49 by amufleh          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRC = ft_printf.c print_char.c print_str.c print_int.c len.c print_hex.c
+SRC = ft_printf.c print_char.c print_str.c print_int.c len.c print_hex.c print_ptr.c print_unsigned.c
 
 
 CC = cc

@@ -6,7 +6,7 @@
 /*   By: amufleh <amufleh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/31 09:29:54 by amufleh           #+#    #+#             */
-/*   Updated: 2025/08/31 12:55:53 by amufleh          ###   ########.fr       */
+/*   Updated: 2025/08/31 18:08:18 by amufleh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,19 +24,23 @@ static int	check_format(char format, void *arg)
 	else if (format == 'i' || format == 'd')
 		count += print_int((int) arg);
 	else if (format == 'x' || format == 'X')
-		count += print_hex((int) arg, format);
-	// else if (format == 's')
-	// 	count += print_str((char *) arg);
+		count += print_hex((unsigned int) arg, format);
+	else if (format == 'p')
+		count += print_ptr((unsigned long) arg);
+	else if (format == 'u')
+		count += print_ptr((unsigned int) arg);
+	else if (format == '%')
+		count += print_char('%');
 	return (count);
 }
 
 int	ft_printf(const char *format, ...)
 {
-	int	count;
-	int	i;
 	va_list	args;
+	int		count;
+	int		i;
 
-	va_start(args,format);
+	va_start (args, format);
 	count = 0;
 	i = 0;
 	while (format[i])

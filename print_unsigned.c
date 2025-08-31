@@ -1,44 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   len.c                                              :+:      :+:    :+:   */
+/*   print_unsigned.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amufleh <amufleh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/31 11:45:44 by amufleh           #+#    #+#             */
-/*   Updated: 2025/08/31 18:06:25 by amufleh          ###   ########.fr       */
+/*   Created: 2025/08/31 18:03:10 by amufleh           #+#    #+#             */
+/*   Updated: 2025/08/31 18:24:06 by amufleh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+// #include "ft_printf.h"
 
-int	int_len(int num)
-{
-	int	count;
+// int print_unsigned(unsigned int num)
+// {
 
-	count = 0;
-	if (num < 0)
-	{
-		count ++;
-		num *= -1;
-	}
-	while (num > 0)
-	{
-		num /= 10;
-		count++;
-	}
-	return (count);
-}
-
-int	hex_len(unsigned int num)
-{
-	int	count;
-
-	count = 1;
-	while (num >= 16)
-	{
-		num /= 16;
-		count++;
-	}
-	return (count);
-}
+// }
