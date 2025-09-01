@@ -1,37 +1,95 @@
+#include <stdio.h>
+#include <limits.h>
 #include "ft_printf.h"
 
-int main()
+int main(void)
 {
-	// ft_printf("%c\n",'c');
-	// ft_printf("%s\n","abdallah");
-	// int x = printf("%s\n","abdallah");
-	// ft_printf("%s\n","");
-	// int y = ft_printf("%i\n",1234);
-	// ft_printf("%d\n",x);
-	// printf("%i",y);
-	// ft_printf("%X\n",-2147483647);
-	// printf("%X\n",-2147483647);
-	// int x = 8;
-	// int *y = &x;
-	// int result = printf("%p\n",y);
-	// int result1 = ft_printf("%p\n",y);
-	// printf("%d %d",result,result1);
-	// printf("%%\n");
-	// ft_printf("%%");
-	// unsigned int a = -1;
-    	// int b = -1;
-    	// ft_printf("%x\n", a);
-	// printf("%x\n", a);
-    	// ft_printf("%x\n", b);
-    	// printf("%x\n", b);
 
-    	// ft_printf("%d\n", a);
-    	// printf("%d\n", a);
-    	// ft_printf("%d\n", b);
-    	// printf("%d\n", b);
+//        printf("========stand========\n");
+//        int l333 = printf(" 42Amman \n Abdallah   \t anything %%\n ---------\n");
+//        int l444 = ft_printf(" 42Amman \n Abdallah   \t anything %%\n ---------\n");
+//        printf("len printf %d len ft_print %d\n",l333 , l444);
 
-	// int x1 = ft_printf("%d", 0);
-	// printf("%d", x1);
-	printf("%u",-429496729);
+
+//     printf("======== %%-1 ========\n");
+//     char c = 'A';
+//     int l111 = printf(NULL, c);
+//     int l222 = ft_printf(NULL, c);
+//     printf("len printf %d len ft_print %d\n",l111 , l222);
+
+//     printf("======== %%c ========\n");
+//     char c = 'A';
+//     int l1 = printf("%c\n", c);
+//     int l2 = ft_printf("%c\n", c);
+//     //ft_printf("%c\n", c);
+//     printf("len printf %d len ft_print %d\n",l1 , l2);
+
+//     printf("\n======== %%s ========\n");
+//     char *str = "| | | | | | 42Amman | | | | | |";
+//     int l3 = printf("%s\n", str);
+//     int l4 =ft_printf("%s\n", str);
+//     //ft_printf("%s\n", " ");
+//     printf("len printf %d len ft_print %d\n",l3 , l4);
+
+//     printf("\n======== %%s (NULL) ========\n");
+//     char *null_str = NULL;
+//     int l5 =printf("%s\n", null_str);
+//     int l6 =ft_printf("%s\n", null_str);
+//     printf("len printf %d len ft_print %d\n",l5 , l6);
+
+//     printf("\n======== %%p ========\n");
+//     char *str1 = "42";
+//     char *ptr = str1;
+//     char *p;
+//     int l7 = printf("%p\n", p);
+//     int l8 =ft_printf("%p\n", p);
+//     printf("len printf %d len ft_print %d\n",l7 , l8);
+
+//     printf("\n======== %%p (NULL) ========\n");
+//     char *null_ptr = NULL;
+//     int l9 = printf("%p\n", null_ptr);
+//     int l10 =ft_printf("%p\n", null_ptr);
+//     printf("len printf %d len ft_print %d\n",l9 , l10);
+
+//     printf("\n======== %%d ========\n");
+//     int d = -12345;
+//     int l11 = printf("%d | %d | %d\n", INT_MIN, INT_MAX, 0);
+//     int l12 = ft_printf("%d | %d | %d\n", INT_MIN, INT_MAX, 0);
+//     printf("len printf %d len ft_print %d\n",l11 , l12);
+
+//     printf("\n======== %%i ========\n");
+//     int i = 6789;
+//     int l13 = printf("%i | %i | %i\n", INT_MIN, INT_MAX, i);
+//     int l14 = ft_printf("%i | %i | %i\n", INT_MIN, INT_MAX, i);
+//     printf("len printf %d len ft_print %d\n",l13 , l14);
+
+//     printf("\n======== %%u ========\n");
+//     unsigned int u = 4294967295;
+//     unsigned int u_neg = (unsigned int)-1;
+//     int l15 = printf("%u | %u | %u\n", 0u, UINT_MAX, u_neg);
+//     int l16 =ft_printf("%u | %u | %u\n", 0u, UINT_MAX, u_neg);
+//     printf("len printf %d len ft_print %d\n",l15 , l16);
+
+//     printf("\n======== %%x ========\n");
+//     int hex = 373592855; //16449317
+// //  int_min = 80000000
+// //  int_max = 7fffffff
+//     int l17 = printf("%x | %x | %x | %x\n", 0, INT_MIN, hex,INT_MAX);
+//     int l18 =ft_printf("%x | %x | %x | %x\n", 0, INT_MIN, hex, INT_MAX);
+//     printf("len printf %d len ft_print %d\n",l17 , l18);
+
+//     printf("\n======== %%X ========\n");
+//     int hex = 373592855; //16449317
+// //  int_min = 80000000
+// //  int_max = 7FFFFFFF
+//     int l19 = printf("%X | %X | %X | %X\n", 0, INT_MIN, hex,INT_MAX);
+//     int l20 =ft_printf("%X | %X | %X | %X\n", 0, INT_MIN, hex, INT_MAX);
+//     printf("len printf %d len ft_print %d\n",l19 , l20);
+
+//     printf("\n======== %%%% ========\n");
+//     int l21 = printf("%%\n");
+//     int l22 = ft_printf("%%\n");
+//     printf("len printf %d len ft_print %d\n",l21 , l22);
+
+    return 0;
 }
-

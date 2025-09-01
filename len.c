@@ -6,7 +6,7 @@
 /*   By: amufleh <amufleh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/31 11:45:44 by amufleh           #+#    #+#             */
-/*   Updated: 2025/09/01 09:53:15 by amufleh          ###   ########.fr       */
+/*   Updated: 2025/09/01 14:15:45 by amufleh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,19 @@
 
 int	int_len(int num)
 {
-	int	count;
+	int		count;
+	long	n;
 
-	if (num == 0)
-	{
-		return (1);
-	}
 	count = 0;
-	if (num < 0)
+	n = num;
+	if (n <= 0)
 	{
-		count ++;
-		num *= -1;
+		count++;
+		n = -n;
 	}
-	while (num > 0)
+	while (n > 0)
 	{
-		num /= 10;
+		n /= 10;
 		count++;
 	}
 	return (count);

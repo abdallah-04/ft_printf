@@ -6,38 +6,40 @@
 /*   By: amufleh <amufleh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/01 08:46:46 by amufleh           #+#    #+#             */
-/*   Updated: 2025/09/01 09:45:44 by amufleh          ###   ########.fr       */
+/*   Updated: 2025/09/01 15:42:22 by amufleh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	cheak_format(char format, void * arg)
+int	cheak_format(char format, va_list arg)
 {
 	int	count;
 
 	count = 0;
 	if (format == 'c')
-		count += print_char((int) arg);
+		count += print_char(va_arg(arg, int));
 	else if (format == 's')
-		count += print_str((char *) arg);
+		count += print_str(va_arg(arg,char *));
 	else if (format == 'i' || format == 'd')
-		count += print_int((int) arg);
-	else if (format == 'x' ||  format == 'X')
-		count += print_hex((unsigned long) arg, format);
+		count += print_int(va_arg(arg, int));
+	else if (format == 'x' || format == 'X')
+		count += print_hex(va_arg(arg, intptr_t), format);
 	else if (format == 'p')
-		count += print_ptr((unsigned long) arg);
-	else if(format == '%')
+		count += print_ptr(va_arg(arg, intptr_t));
+	else if (format == '%')
 		count += print_char('%');
 	return (count);
 }
 
 int	ft_printf(const char *format, ...)
 {
-	int	count;
-	int	i;
 	va_list	args;
+	int		count;
+	int		i;
 
+	if (!format)
+		return (-1);
 	i = 0;
 	count = 0;
 	va_start(args, format);
@@ -46,7 +48,7 @@ int	ft_printf(const char *format, ...)
 		if (format[i] == '%')
 		{
 			i++;
-			count += cheak_format(format[i], va_arg(args, void *));
+			count += cheak_format(format[i], args);
 		}
 		else
 		{

@@ -6,7 +6,7 @@
 /*   By: amufleh <amufleh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/31 11:36:43 by amufleh           #+#    #+#             */
-/*   Updated: 2025/09/01 09:45:59 by amufleh          ###   ########.fr       */
+/*   Updated: 2025/09/01 10:53:07 by amufleh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,10 @@
 int	print_str(char *str)
 {
 	if (!str)
-		return (ft_strlen("(NULL)"));
+	{
+		print_str("(null)");
+		return (ft_strlen("(null)"));
+	}
 	ft_putstr_fd (str, 1);
 	return (ft_strlen(str));
 }

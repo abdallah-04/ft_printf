@@ -6,7 +6,7 @@
 /*   By: amufleh <amufleh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/31 11:42:47 by amufleh           #+#    #+#             */
-/*   Updated: 2025/08/31 11:49:41 by amufleh          ###   ########.fr       */
+/*   Updated: 2025/09/01 10:48:57 by amufleh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 
 int	print_int(int num)
 {
+	int	count;
+
+	count = int_len(num);
 	ft_putnbr_fd(num, 1);
-	return (int_len(num));
+	return (count);
 }
