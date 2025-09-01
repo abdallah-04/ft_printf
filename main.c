@@ -18,12 +18,20 @@ int main()
 	// printf("%d %d",result,result1);
 	// printf("%%\n");
 	// ft_printf("%%");
-	unsigned int a = -1;
-    	int b = -1;
-    	ft_printf("%x\n", a);
-    	ft_printf("%x\n", b);
+	// unsigned int a = -1;
+    	// int b = -1;
+    	// ft_printf("%x\n", a);
+	// printf("%x\n", a);
+    	// ft_printf("%x\n", b);
+    	// printf("%x\n", b);
 
-    	ft_printf("%d\n", a);
-    	ft_printf("%d\n", b);
+    	// ft_printf("%d\n", a);
+    	// printf("%d\n", a);
+    	// ft_printf("%d\n", b);
+    	// printf("%d\n", b);
+
+	// int x1 = ft_printf("%d", 0);
+	// printf("%d", x1);
+	printf("%u",-429496729);
 }
 
