@@ -10,7 +10,6 @@ int main(void)
 //        int l444 = ft_printf(" 42Amman \n Abdallah   \t anything %%\n ---------\n");
 //        printf("len printf %d len ft_print %d\n",l333 , l444);
 
-
 //     printf("======== %%-1 ========\n");
 //     char c = 'A';
 //     int l111 = printf(NULL, c);
@@ -37,13 +36,12 @@ int main(void)
 //     int l6 =ft_printf("%s\n", null_str);
 //     printf("len printf %d len ft_print %d\n",l5 , l6);
 
-//     printf("\n======== %%p ========\n");
-//     char *str1 = "42";
-//     char *ptr = str1;
-//     char *p;
-//     int l7 = printf("%p\n", p);
-//     int l8 =ft_printf("%p\n", p);
-//     printf("len printf %d len ft_print %d\n",l7 , l8);
+    printf("\n======== %%p ========\n");
+    char *str1 = "42";
+    char *ptr = str1;
+    int l7 = printf("%p\n", ptr);
+    int l8 =ft_printf("%p\n", ptr);
+    printf("len printf %d len ft_print %d\n",l7 , l8);
 
 //     printf("\n======== %%p (NULL) ========\n");
 //     char *null_ptr = NULL;
@@ -53,8 +51,8 @@ int main(void)
 
 //     printf("\n======== %%d ========\n");
 //     int d = -12345;
-//     int l11 = printf("%d | %d | %d\n", INT_MIN, INT_MAX, 0);
-//     int l12 = ft_printf("%d | %d | %d\n", INT_MIN, INT_MAX, 0);
+//     int l11 = printf("%d | %d | %d | %d\n", INT_MIN, INT_MAX, 0, d);
+//     int l12 = ft_printf("%d | %d | %d | %d\n", INT_MIN, INT_MAX, 0, d);
 //     printf("len printf %d len ft_print %d\n",l11 , l12);
 
 //     printf("\n======== %%i ========\n");

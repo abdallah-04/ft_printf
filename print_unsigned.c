@@ -6,13 +6,13 @@
 /*   By: amufleh <amufleh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/31 18:03:10 by amufleh           #+#    #+#             */
-/*   Updated: 2025/09/01 14:40:47 by amufleh          ###   ########.fr       */
+/*   Updated: 2025/09/01 17:38:15 by amufleh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-// int print_unsigned(unsigned int num)
-// {
+int print_unsigned(unsigned int num)
+{
 
-// }
+}
