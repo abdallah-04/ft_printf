@@ -36,12 +36,12 @@ int main(void)
 //     int l6 =ft_printf("%s\n", null_str);
 //     printf("len printf %d len ft_print %d\n",l5 , l6);
 
-    printf("\n======== %%p ========\n");
-    char *str1 = "42";
-    char *ptr = str1;
-    int l7 = printf("%p\n", ptr);
-    int l8 =ft_printf("%p\n", ptr);
-    printf("len printf %d len ft_print %d\n",l7 , l8);
+//     printf("\n======== %%p ========\n");
+//     char *str1 = "42";
+//     char *ptr = str1;
+//     int l7 = printf("%p\n", ptr);
+//     int l8 =ft_printf("%p\n", ptr);
+//     printf("len printf %d len ft_print %d\n",l7 , l8);
 
 //     printf("\n======== %%p (NULL) ========\n");
 //     char *null_ptr = NULL;
@@ -51,7 +51,7 @@ int main(void)
 
 //     printf("\n======== %%d ========\n");
 //     int d = -12345;
-//     int l11 = printf("%d | %d | %d | %d\n", INT_MIN, INT_MAX, 0, d);
+//     int l11 = printf("%d | %d | %d | %d\n", INT_MIN, INT_MAX , 0, d);
 //     int l12 = ft_printf("%d | %d | %d | %d\n", INT_MIN, INT_MAX, 0, d);
 //     printf("len printf %d len ft_print %d\n",l11 , l12);
 
@@ -62,10 +62,10 @@ int main(void)
 //     printf("len printf %d len ft_print %d\n",l13 , l14);
 
 //     printf("\n======== %%u ========\n");
-//     unsigned int u = 4294967295;
+//     unsigned int u = 23232773;
 //     unsigned int u_neg = (unsigned int)-1;
-//     int l15 = printf("%u | %u | %u\n", 0u, UINT_MAX, u_neg);
-//     int l16 =ft_printf("%u | %u | %u\n", 0u, UINT_MAX, u_neg);
+//     int l15 = printf("%u | %u | %u | %u\n", 0, UINT_MAX, u_neg,u);
+//     int l16 =ft_printf("%u | %u | %u | %u\n", 0, UINT_MAX, u_neg,u);
 //     printf("len printf %d len ft_print %d\n",l15 , l16);
 
 //     printf("\n======== %%x ========\n");
@@ -88,6 +88,12 @@ int main(void)
 //     int l21 = printf("%%\n");
 //     int l22 = ft_printf("%%\n");
 //     printf("len printf %d len ft_print %d\n",l21 , l22);
+
+//        printf("========extra========\n");
+//        int l333 = printf(NULL);
+//        int l444 = ft_printf(NULL);
+//        printf("len printf %d len ft_print %d\n",l333 , l444);
+
 
     return 0;
 }
