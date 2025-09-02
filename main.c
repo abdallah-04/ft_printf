@@ -36,24 +36,24 @@ int main(void)
 //     int l6 =ft_printf("%s\n", null_str);
 //     printf("len printf %d len ft_print %d\n",l5 , l6);
 
-//     printf("\n======== %%p ========\n");
-//     char *str1 = "42";
-//     char *ptr = str1;
-//     int l7 = printf("%p\n", ptr);
-//     int l8 =ft_printf("%p\n", ptr);
-//     printf("len printf %d len ft_print %d\n",l7 , l8);
+    // printf("\n======== %%p ========\n");
+    // char *str1 = "42";
+    // char *ptr = str1;
+    // int l7 = printf("%p\n", ptr);
+    // int l8 =ft_printf("%p\n", ptr);
+    // printf("len printf %d len ft_print %d\n",l7 , l8);
 
-//     printf("\n======== %%p (NULL) ========\n");
-//     char *null_ptr = NULL;
-//     int l9 = printf("%p\n", null_ptr);
-//     int l10 =ft_printf("%p\n", null_ptr);
-//     printf("len printf %d len ft_print %d\n",l9 , l10);
+    // printf("\n======== %%p (NULL) ========\n");
+    // char *null_ptr = NULL;
+    // int l9 = printf("%p\n", null_ptr);
+    // int l10 =ft_printf("%p\n", null_ptr);
+    // printf("len printf %d len ft_print %d\n",l9 , l10);
 
-//     printf("\n======== %%d ========\n");
-//     int d = -12345;
-//     int l11 = printf("%d | %d | %d | %d\n", INT_MIN, INT_MAX , 0, d);
-//     int l12 = ft_printf("%d | %d | %d | %d\n", INT_MIN, INT_MAX, 0, d);
-//     printf("len printf %d len ft_print %d\n",l11 , l12);
+    // printf("\n======== %%d ========\n");
+    // int d = -12345;
+    // int l11 = printf("%d | %d | %d | %d\n", INT_MIN, INT_MAX , 0, d);
+    // int l12 = ft_printf("%d | %d | %d | %d\n", INT_MIN, INT_MAX, 0, d);
+    // printf("len printf %d len ft_print %d\n",l11 , l12);
 
 //     printf("\n======== %%i ========\n");
 //     int i = 6789;
@@ -74,6 +74,7 @@ int main(void)
 // //  int_max = 7fffffff
 //     int l17 = printf("%x | %x | %x | %x\n", 0, INT_MIN, hex,INT_MAX);
 //     int l18 =ft_printf("%x | %x | %x | %x\n", 0, INT_MIN, hex, INT_MAX);
+//     //ft_printf("%x\n",ULONG_MAX); // error
 //     printf("len printf %d len ft_print %d\n",l17 , l18);
 // //  ft_printf("%x | %x\n",LONG_MAX,LONG_MAX);
 // //  printf("%x | %x\n",LONG_MAX,LONG_MAX);
