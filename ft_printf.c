@@ -6,7 +6,7 @@
 /*   By: amufleh <amufleh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/02 09:14:40 by amufleh           #+#    #+#             */
-/*   Updated: 2025/09/02 09:16:12 by amufleh          ###   ########.fr       */
+/*   Updated: 2025/09/02 17:39:49 by amufleh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	cheak_format(char format, va_list arg)
 	else if (format == 'i' || format == 'd')
 		count += print_int(va_arg(arg, int));
 	else if (format == 'x' || format == 'X')
-		count += print_hex(va_arg(arg, intptr_t), format);
+		count += print_hex(va_arg(arg, unsigned int), format);
 	else if (format == 'p')
 		count += print_ptr(va_arg(arg, intptr_t));
 	else if (format == 'u')

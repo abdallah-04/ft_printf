@@ -5,23 +5,23 @@
 int main(void)
 {
 
-//        printf("========stand========\n");
-//        int l333 = printf(" 42Amman \n Abdallah   \t anything %%\n ---------\n");
-//        int l444 = ft_printf(" 42Amman \n Abdallah   \t anything %%\n ---------\n");
-//        printf("len printf %d len ft_print %d\n",l333 , l444);
+    //    printf("========stand========\n");
+    //    int l333 = printf(" 42Amman \n Abdallah   \t anything %%\n ---------\n");
+    //    int l444 = ft_printf(" 42Amman \n Abdallah   \t anything %%\n ---------\n");
+    //    printf("len printf %d len ft_print %d\n",l333 , l444);
 
-//     printf("======== %%-1 ========\n");
-//     char c = 'A';
-//     int l111 = printf(NULL, c);
-//     int l222 = ft_printf(NULL, c);
-//     printf("len printf %d len ft_print %d\n",l111 , l222);
+    // printf("======== %%-1 ========\n");
+    // char c = 'A';
+    // int l111 = printf(NULL, c);
+    // int l222 = ft_printf(NULL, c);
+    // printf("len printf %d len ft_print %d\n",l111 , l222);
 
-//     printf("======== %%c ========\n");
-//     char c = 'A';
-//     int l1 = printf("%c\n", c);
-//     int l2 = ft_printf("%c\n", c);
-//     //ft_printf("%c\n", c);
-//     printf("len printf %d len ft_print %d\n",l1 , l2);
+    // printf("======== %%c ========\n");
+    // char c = 'A';
+    // int l1 = printf("%c\n", c);
+    // int l2 = ft_printf("%c\n", c);
+    // //ft_printf("%c\n", c);
+    // printf("len printf %d len ft_print %d\n",l1 , l2);
 
 //     printf("\n======== %%s ========\n");
 //     char *str = "| | | | | | 42Amman | | | | | |";
