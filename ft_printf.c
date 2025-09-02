@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: amufleh <amufleh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/01 08:46:46 by amufleh           #+#    #+#             */
-/*   Updated: 2025/09/01 18:18:19 by amufleh          ###   ########.fr       */
+/*   Created: 2025/09/02 09:14:40 by amufleh           #+#    #+#             */
+/*   Updated: 2025/09/02 09:16:12 by amufleh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	cheak_format(char format, va_list arg)
 	if (format == 'c')
 		count += print_char(va_arg(arg, int));
 	else if (format == 's')
-		count += print_str(va_arg(arg,char *));
+		count += print_str(va_arg(arg, char *));
 	else if (format == 'i' || format == 'd')
 		count += print_int(va_arg(arg, int));
 	else if (format == 'x' || format == 'X')

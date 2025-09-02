@@ -6,7 +6,7 @@
 #    By: amufleh <amufleh@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/31 10:55:52 by amufleh           #+#    #+#              #
-#    Updated: 2025/09/01 14:20:29 by amufleh          ###   ########.fr        #
+#    Updated: 2025/09/02 08:57:19 by amufleh          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,8 +35,6 @@ fclean: clean
 
 re : fclean $(NAME)
 
-bonus: $(OBJ)
-	ar rcs $(NAME) $(OBJ)
 
 .PHONY : all clean fclean re
 
