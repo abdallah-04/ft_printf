@@ -6,13 +6,13 @@
 /*   By: amufleh <amufleh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/31 12:15:36 by amufleh           #+#    #+#             */
-/*   Updated: 2025/09/02 19:10:07 by amufleh          ###   ########.fr       */
+/*   Updated: 2025/09/02 19:28:47 by amufleh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static void	hex_conversion(unsigned int num, const char *str)
+static void	hex_conversion(unsigned long num, const char *str)
 {
 	int	indx;
 
@@ -25,7 +25,7 @@ static void	hex_conversion(unsigned int num, const char *str)
 	write(1, &str[indx], 1);
 }
 
-int	print_hex(unsigned int num, char format)
+int	print_hex(unsigned long num, char format)
 {
 	const char	*hex_char;
 	int			count;

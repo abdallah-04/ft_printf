@@ -4,6 +4,7 @@
 
 int main(void)
 {
+    printf("%x",ULONG_MAX);
 
     //    printf("========stand========\n");
     //    int l333 = printf(" 42Amman \n Abdallah   \t anything %%\n ---------\n");

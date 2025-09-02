@@ -6,7 +6,7 @@
 /*   By: amufleh <amufleh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/02 09:25:46 by amufleh           #+#    #+#             */
-/*   Updated: 2025/09/02 19:11:22 by amufleh          ###   ########.fr       */
+/*   Updated: 2025/09/02 19:29:51 by amufleh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	print_char(int c);
 int	print_str(char *str);
 int	int_len(int num);
 int	hex_len(unsigned int num);
-int	print_hex(unsigned int num, char format);
+int	print_hex(unsigned long num, char format);
 int	print_ptr(unsigned long ptr);
 int	print_int(int num);
 int	print_unsigned(unsigned int num);
