@@ -6,7 +6,7 @@
 #    By: amufleh <amufleh@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/31 10:55:52 by amufleh           #+#    #+#              #
-#    Updated: 2025/09/02 08:57:19 by amufleh          ###   ########.fr        #
+#    Updated: 2025/09/02 09:41:05 by amufleh          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,8 +21,9 @@ LIBFT = libft/libft.a
 
 all: $(NAME)
 
-$(NAME):$(OBJ) $(LIBFT)
-	ar rcs  $(NAME) $(OBJ) $(LIBFT)
+$(NAME): $(OBJ) $(LIBFT)
+	cp $(LIBFT) $(NAME)
+	ar rcs $(NAME) $(OBJ)
 $(LIBFT):
 	make -C libft
 clean:

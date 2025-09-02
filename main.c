@@ -75,6 +75,9 @@ int main(void)
 //     int l17 = printf("%x | %x | %x | %x\n", 0, INT_MIN, hex,INT_MAX);
 //     int l18 =ft_printf("%x | %x | %x | %x\n", 0, INT_MIN, hex, INT_MAX);
 //     printf("len printf %d len ft_print %d\n",l17 , l18);
+// //  ft_printf("%x | %x\n",LONG_MAX,LONG_MAX);
+// //  printf("%x | %x\n",LONG_MAX,LONG_MAX);
+
 
 //     printf("\n======== %%X ========\n");
 //     int hex = 373592855; //16449317
