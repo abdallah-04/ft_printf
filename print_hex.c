@@ -6,7 +6,7 @@
 /*   By: amufleh <amufleh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/31 12:15:36 by amufleh           #+#    #+#             */
-/*   Updated: 2025/09/02 19:28:47 by amufleh          ###   ########.fr       */
+/*   Updated: 2026/01/23 14:53:01 by amufleh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,3 +43,4 @@ int	print_hex(unsigned long num, char format)
 	hex_conversion(num, hex_char);
 	return (count);
 }
+// ft_printf

@@ -6,7 +6,7 @@
 /*   By: amufleh <amufleh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/31 09:52:01 by amufleh           #+#    #+#             */
-/*   Updated: 2025/09/01 17:29:50 by amufleh          ###   ########.fr       */
+/*   Updated: 2026/01/23 14:53:03 by amufleh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,3 +17,4 @@ int	print_char(int c)
 	ft_putchar_fd(c, 1);
 	return (1);
 }
+// ft_printf

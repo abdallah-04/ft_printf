@@ -6,7 +6,7 @@
 /*   By: amufleh <amufleh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/31 11:45:44 by amufleh           #+#    #+#             */
-/*   Updated: 2025/09/01 19:07:21 by amufleh          ###   ########.fr       */
+/*   Updated: 2026/01/23 14:53:15 by amufleh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,3 +61,4 @@ int	unsigned_len(unsigned int num)
 	}
 	return (count);
 }
+// ft_printf

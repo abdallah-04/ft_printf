@@ -6,7 +6,7 @@
 /*   By: amufleh <amufleh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/09 10:36:57 by amufleh           #+#    #+#             */
-/*   Updated: 2025/08/16 14:17:16 by amufleh          ###   ########.fr       */
+/*   Updated: 2026/01/23 14:53:28 by amufleh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,3 +22,4 @@ int	ft_isascii(int c)
 {
 	printf("%d",ft_isascii('w'));
 }*/
+// ft_printf

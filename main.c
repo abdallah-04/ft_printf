@@ -98,7 +98,7 @@ int main(void)
 //        int l333 = printf(NULL);
 //        int l444 = ft_printf(NULL);
 //        printf("len printf %d len ft_print %d\n",l333 , l444);
-
+// ft_printf
 
     return 0;
 }
